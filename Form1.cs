@@ -55,7 +55,7 @@ namespace WordGameExtreeeeeeem
             if (splitedArray.Length > 1)
             {
                 this.Hide();
-                Game game = new Game(splitedArray);
+                Game game = new Game(splitedArray,this);
                 game.Show();
             }
             else

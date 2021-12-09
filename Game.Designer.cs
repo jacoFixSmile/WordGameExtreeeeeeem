@@ -33,6 +33,7 @@ namespace WordGameExtreeeeeeem
             this.labelActiveWoord = new System.Windows.Forms.Label();
             this.buttonVolgende = new System.Windows.Forms.Button();
             this.buttonVorige = new System.Windows.Forms.Button();
+            this.buttonNextGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelActiveWoord
@@ -64,11 +65,22 @@ namespace WordGameExtreeeeeeem
             this.buttonVorige.UseVisualStyleBackColor = true;
             this.buttonVorige.Click += new System.EventHandler(this.buttonVorige_Click);
             // 
+            // buttonNextGame
+            // 
+            this.buttonNextGame.Location = new System.Drawing.Point(275, 345);
+            this.buttonNextGame.Name = "buttonNextGame";
+            this.buttonNextGame.Size = new System.Drawing.Size(223, 23);
+            this.buttonNextGame.TabIndex = 3;
+            this.buttonNextGame.Text = "Volgende Word Game Extreeeem!!!";
+            this.buttonNextGame.UseVisualStyleBackColor = true;
+            this.buttonNextGame.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonNextGame);
             this.Controls.Add(this.buttonVorige);
             this.Controls.Add(this.buttonVolgende);
             this.Controls.Add(this.labelActiveWoord);
@@ -86,5 +98,6 @@ namespace WordGameExtreeeeeeem
         private System.Windows.Forms.Label labelActiveWoord;
         private System.Windows.Forms.Button buttonVolgende;
         private System.Windows.Forms.Button buttonVorige;
+        private System.Windows.Forms.Button buttonNextGame;
     }
 }

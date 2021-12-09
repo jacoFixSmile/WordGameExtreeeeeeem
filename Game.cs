@@ -14,16 +14,20 @@ namespace WordGameExtreeeeeeem
     {
         private String[] WoordenLijst;
         private int WoordCounter=0;
-        public Game(String[] woordenlijstRaw)
+        private Form1 parrentCallback;
+        public Game(String[] woordenlijstRaw, Form1 parrentCallback)
         {
             this.WoordenLijst = woordenlijstRaw;
             InitializeComponent();
             labelActiveWoord.Text = WoordenLijst[0];
             buttonVorige.Hide();
+            buttonNextGame.Hide();
+
             if (WoordCounter + 1 >= WoordenLijst.Length)
             {
                 buttonVolgende.Hide();
             }
+            this.parrentCallback = parrentCallback;
         }
       
         private void buttonVolgende_Click(object sender, EventArgs e)
@@ -38,6 +42,7 @@ namespace WordGameExtreeeeeeem
             if (WoordCounter + 1 >= WoordenLijst.Length)
             {
                 buttonVolgende.Hide();
+                buttonNextGame.Show();
             }
             // Toon vorige button als het mogelijk is
             if (WoordCounter - 1 >= 0)
@@ -53,6 +58,8 @@ namespace WordGameExtreeeeeeem
             if (WoordCounter + 1 < WoordenLijst.Length)
             {
                 buttonVolgende.Show();
+                buttonNextGame.Hide();
+
             }
             // Toon button vorige niet als het niet kan
             if (WoordCounter - 1 < 0)
@@ -69,6 +76,12 @@ namespace WordGameExtreeeeeeem
         private void buttonVorige_Click(object sender, EventArgs e)
         {
             this.goPrevious();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parrentCallback.Show();
         }
     }
 }

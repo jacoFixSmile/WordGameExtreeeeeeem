@@ -35,6 +35,7 @@ namespace WordGameExtreeeeeeem
             this.buttonSaveWords = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.comboBoxTypeGame = new System.Windows.Forms.ComboBox();
+            this.buttonLaatWoordenLijst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonStart
@@ -88,11 +89,22 @@ namespace WordGameExtreeeeeeem
             this.comboBoxTypeGame.Size = new System.Drawing.Size(121, 23);
             this.comboBoxTypeGame.TabIndex = 4;
             // 
+            // buttonLaatWoordenLijst
+            // 
+            this.buttonLaatWoordenLijst.Location = new System.Drawing.Point(97, 293);
+            this.buttonLaatWoordenLijst.Name = "buttonLaatWoordenLijst";
+            this.buttonLaatWoordenLijst.Size = new System.Drawing.Size(153, 23);
+            this.buttonLaatWoordenLijst.TabIndex = 5;
+            this.buttonLaatWoordenLijst.Text = "Laat woorden lijst";
+            this.buttonLaatWoordenLijst.UseVisualStyleBackColor = true;
+            this.buttonLaatWoordenLijst.Click += new System.EventHandler(this.buttonLaatWoordenLijst_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLaatWoordenLijst);
             this.Controls.Add(this.comboBoxTypeGame);
             this.Controls.Add(this.buttonSaveWords);
             this.Controls.Add(this.textBoxWoordenSpel);
@@ -113,6 +125,7 @@ namespace WordGameExtreeeeeeem
         private System.Windows.Forms.Button buttonSaveWords;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox comboBoxTypeGame;
+        private System.Windows.Forms.Button buttonLaatWoordenLijst;
     }
 }
 

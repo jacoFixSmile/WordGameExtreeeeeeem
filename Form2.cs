@@ -13,11 +13,11 @@ namespace WordGameExtreeeeeeem
 {
     public partial class Form2 : Form
     {
-        private String textToSafe;
+        private String TextToSafe;
         public Form2(String text)
         {
             InitializeComponent();
-            this.textToSafe = text;
+            this.TextToSafe = text;
         }
 
         private void buttonDontSaveWoord_Click(object sender, EventArgs e)
@@ -30,7 +30,9 @@ namespace WordGameExtreeeeeeem
             if (textBoxNameList.Text.Length > 0)
             {
                  String textBoxNameListNoSpace = textBoxNameList.Text.Replace(' ', '_');
-                 File.WriteAllTextAsync("woordenLijsten/" + textBoxNameListNoSpace+".txt", textToSafe);
+                 File.WriteAllTextAsync(textBoxNameListNoSpace+".txt", this.TextToSafe);
+                this.Close();
+
             }
             else
             {

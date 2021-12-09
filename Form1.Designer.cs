@@ -99,7 +99,7 @@ namespace WordGameExtreeeeeeem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonStart);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "WordGameExtreeeeeeem";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WordGameExtreeeeeeem
 {
@@ -26,7 +27,17 @@ namespace WordGameExtreeeeeeem
 
         private void buttonSaveWoorden_Click(object sender, EventArgs e)
         {
-
+            if (textBoxNameList.Text.Length > 0)
+            {
+                 String textBoxNameListNoSpace = textBoxNameList.Text.Replace(' ', '_');
+                 File.WriteAllTextAsync("woordenLijsten/" + textBoxNameListNoSpace+".txt", textToSafe);
+            }
+            else
+            {
+                MessageBox.Show("Voer een naam voor de lijst in.", "Niet genoeg input");
+            }
         }
+
     }
+
 }

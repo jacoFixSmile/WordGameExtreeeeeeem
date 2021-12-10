@@ -29,6 +29,7 @@ namespace WordGameExtreeeeeeem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.buttonDontSaveWoord = new System.Windows.Forms.Button();
             this.buttonSaveWoorden = new System.Windows.Forms.Button();
             this.textBoxNameList = new System.Windows.Forms.TextBox();
@@ -70,7 +71,12 @@ namespace WordGameExtreeeeeeem
             this.Controls.Add(this.textBoxNameList);
             this.Controls.Add(this.buttonSaveWoorden);
             this.Controls.Add(this.buttonDontSaveWoord);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(339, 218);
+            this.MinimumSize = new System.Drawing.Size(339, 218);
             this.Name = "Form2";
+            this.Opacity = 0.95D;
             this.Text = "Woorden lijst opslagen";
             this.ResumeLayout(false);
             this.PerformLayout();

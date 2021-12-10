@@ -83,5 +83,10 @@ namespace WordGameExtreeeeeeem
             this.Close();
             parrentCallback.Show();
         }
+
+        private void labelActiveWoord_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

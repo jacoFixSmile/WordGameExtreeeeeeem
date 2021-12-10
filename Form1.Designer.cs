@@ -29,6 +29,7 @@ namespace WordGameExtreeeeeeem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxWoordenSpel = new System.Windows.Forms.TextBox();
@@ -103,6 +104,8 @@ namespace WordGameExtreeeeeeem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonLaatWoordenLijst);
             this.Controls.Add(this.comboBoxTypeGame);
@@ -110,6 +113,7 @@ namespace WordGameExtreeeeeeem
             this.Controls.Add(this.textBoxWoordenSpel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonStart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "WordGameExtreeeeeeem";
             this.ResumeLayout(false);

@@ -38,18 +38,23 @@ namespace WordGameExtreeeeeeem
             // 
             // labelActiveWoord
             // 
+            this.labelActiveWoord.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelActiveWoord.AutoSize = true;
-            this.labelActiveWoord.Location = new System.Drawing.Point(336, 114);
+            this.labelActiveWoord.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelActiveWoord.Location = new System.Drawing.Point(258, 90);
             this.labelActiveWoord.Name = "labelActiveWoord";
-            this.labelActiveWoord.Size = new System.Drawing.Size(44, 15);
+            this.labelActiveWoord.Size = new System.Drawing.Size(254, 86);
             this.labelActiveWoord.TabIndex = 0;
             this.labelActiveWoord.Text = "Testing";
+            this.labelActiveWoord.Click += new System.EventHandler(this.labelActiveWoord_Click);
             // 
             // buttonVolgende
             // 
-            this.buttonVolgende.Location = new System.Drawing.Point(582, 345);
+            this.buttonVolgende.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonVolgende.AutoSize = true;
+            this.buttonVolgende.Location = new System.Drawing.Point(582, 343);
             this.buttonVolgende.Name = "buttonVolgende";
-            this.buttonVolgende.Size = new System.Drawing.Size(113, 23);
+            this.buttonVolgende.Size = new System.Drawing.Size(113, 25);
             this.buttonVolgende.TabIndex = 1;
             this.buttonVolgende.Text = "Volgend woord";
             this.buttonVolgende.UseVisualStyleBackColor = true;
@@ -57,9 +62,11 @@ namespace WordGameExtreeeeeeem
             // 
             // buttonVorige
             // 
+            this.buttonVorige.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonVorige.AutoSize = true;
             this.buttonVorige.Location = new System.Drawing.Point(103, 345);
             this.buttonVorige.Name = "buttonVorige";
-            this.buttonVorige.Size = new System.Drawing.Size(109, 23);
+            this.buttonVorige.Size = new System.Drawing.Size(109, 25);
             this.buttonVorige.TabIndex = 2;
             this.buttonVorige.Text = "Vorig woord";
             this.buttonVorige.UseVisualStyleBackColor = true;
@@ -67,9 +74,11 @@ namespace WordGameExtreeeeeeem
             // 
             // buttonNextGame
             // 
+            this.buttonNextGame.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonNextGame.AutoSize = true;
             this.buttonNextGame.Location = new System.Drawing.Point(275, 345);
             this.buttonNextGame.Name = "buttonNextGame";
-            this.buttonNextGame.Size = new System.Drawing.Size(223, 23);
+            this.buttonNextGame.Size = new System.Drawing.Size(223, 25);
             this.buttonNextGame.TabIndex = 3;
             this.buttonNextGame.Text = "Volgende Word Game Extreeeem!!!";
             this.buttonNextGame.UseVisualStyleBackColor = true;
@@ -79,6 +88,8 @@ namespace WordGameExtreeeeeeem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonNextGame);
             this.Controls.Add(this.buttonVorige);

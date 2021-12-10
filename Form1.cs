@@ -70,7 +70,7 @@ namespace WordGameExtreeeeeeem
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Title = "Browse Text Files";
             openFileDialog1.DefaultExt = "txt";
-            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|Microsoft word files (*.docx)|*.docx";
             string path = System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase;
             path = System.IO.Path.GetDirectoryName(path);
             openFileDialog1.InitialDirectory = path;
@@ -79,6 +79,7 @@ namespace WordGameExtreeeeeeem
             DialogResult dr = openFileDialog1.ShowDialog(); 
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
+                
                 string buffer = null;
                 using (openFileDialog1.OpenFile())
                 {
